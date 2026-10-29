@@ -1,0 +1,11 @@
+{
+  "name": "k12-ch5-organic-workshops",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check app.js && node --check labs.js && node --check lab-art.js && node --check lab-gestures.js && node --check content.js && node --check core.js"
+  }
+}

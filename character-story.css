@@ -1,0 +1,58 @@
+/* Story presentation only: no selectors target the experimental apparatus. */
+.story-prologue{max-width:1300px;margin:0 auto 32px;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:30px;padding:26px;background:#fffdf7;border:1px solid #dddccf;border-radius:16px;box-shadow:0 10px 30px #343f2106}
+.story-arrival{margin:0;min-width:0;position:relative;border-radius:10px;overflow:hidden;background:#e7e7d9;align-self:stretch}
+.story-arrival img{width:100%;height:100%;min-height:290px;max-height:370px;object-fit:cover;object-position:38% 50%;display:block}
+.story-arrival figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 18px 12px;background:linear-gradient(transparent,#172f37cf);color:#fffdf4;font-size:12px}
+.story-prologue-copy{align-self:center;min-width:0;padding:6px 8px 6px 0}
+.story-prologue-copy h2{font-size:24px;margin:6px 0 13px}
+.story-prologue-copy>p{font-size:14px;line-height:1.85;color:#536657;margin:0 0 12px}
+.story-prologue-copy blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid #b29463;background:#f7f1e5;font-size:14px;line-height:1.85;color:#665033}
+.story-prologue-copy cite{display:block;text-align:right;font-size:11px;font-style:normal;color:#847457;margin-top:5px}
+.story-role-notes{display:flex;gap:8px 20px;flex-wrap:wrap;font-size:11px;color:#75816d;border-top:1px solid #e8e8dc;padding-top:12px}
+.story-role-notes b{color:#3a5946;margin-right:5px}
+.story-scene-intro{margin:0 0 20px}
+.story-scene-intro .opening{margin:0 0 14px;font-size:14px}
+.story-dialogue{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.story-speech{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;align-items:center;padding:13px 15px;border:1px solid #e7dfcd;background:#fbf7ed;border-radius:10px}
+.story-speech--grandpa{border-color:#dce3d4;background:#f1f5ec}
+.story-speech p{font-size:13px;line-height:1.8;margin:0;color:#4c6050}
+.story-speech b{font-size:11px;letter-spacing:.1em;display:block;margin-bottom:3px;color:#946035}
+.story-speech--grandpa b{color:#507246}
+.story-portrait{display:block;width:56px;height:56px;border-radius:50%;border:1px solid #e4daca;background-repeat:no-repeat;background-color:#fcfaf3;box-shadow:0 2px 8px #504a2510}
+.story-portrait--kui{background-image:url('./assets/story/kui.png');background-size:var(--portrait-scale,808.42%) auto;background-position:var(--portrait-x,39.38%) var(--portrait-y,4.2%)}
+.story-portrait--grandpa{background-image:url('./assets/story/grandpa.png');background-size:var(--portrait-scale,808.42%) auto;background-position:var(--portrait-x,39.38%) var(--portrait-y,4.2%)}
+@media(max-width:1400px){.story-prologue{margin-left:38px;margin-right:38px}}
+@media(max-width:1050px){.story-dialogue{grid-template-columns:1fr}.story-prologue{gap:20px}.story-prologue-copy h2{font-size:21px}.story-arrival img{max-height:none}}
+@media(max-width:700px){.story-prologue{grid-template-columns:1fr;margin:0 20px 24px;padding:18px;gap:18px}.story-arrival img{height:250px;min-height:0;object-position:38% 43%}.story-prologue-copy{padding:0}.story-speech{padding:11px;gap:10px;grid-template-columns:48px minmax(0,1fr)}.story-portrait{width:48px;height:48px}}
+
+/* One expression per story scene, using the original character sheets. */
+.story-portrait--kui[data-expression="wonder"]{--portrait-scale:731.429%;--portrait-x:75.415%;--portrait-y:1.229%}
+.story-portrait--kui[data-expression="surprised"]{--portrait-scale:731.429%;--portrait-x:56.561%;--portrait-y:0.614%}
+.story-portrait--kui[data-expression="excited"]{--portrait-scale:731.429%;--portrait-x:39.970%;--portrait-y:31.941%}
+.story-portrait--kui[data-expression="thinking"]{--portrait-scale:731.429%;--portrait-x:96.531%;--portrait-y:1.229%}
+.story-portrait--kui[data-expression="curious"]{--portrait-scale:731.429%;--portrait-x:35.822%;--portrait-y:58.722%}
+.story-portrait--kui[data-expression="determined"]{--portrait-scale:731.429%;--portrait-x:55.430%;--portrait-y:58.354%}
+.story-portrait--kui[data-expression="worried"]{--portrait-scale:731.429%;--portrait-x:76.169%;--portrait-y:33.170%}
+.story-portrait--grandpa[data-expression="gentle"]{--portrait-scale:830.270%;--portrait-x:37.750%;--portrait-y:2.384%}
+.story-portrait--grandpa[data-expression="curious"]{--portrait-scale:930.909%;--portrait-x:39.023%;--portrait-y:32.596%}
+.story-portrait--grandpa[data-expression="idea"]{--portrait-scale:853.333%;--portrait-x:81.858%;--portrait-y:2.370%}
+.story-portrait--grandpa[data-expression="thoughtful"]{--portrait-scale:853.333%;--portrait-x:67.847%;--portrait-y:2.370%}
+.story-portrait--grandpa[data-expression="confident"]{--portrait-scale:853.333%;--portrait-x:96.608%;--portrait-y:2.370%}
+.story-portrait--grandpa[data-expression="encourage"]{--portrait-scale:830.270%;--portrait-x:96.965%;--portrait-y:32.777%}
+.story-portrait--grandpa[data-expression="mentor"]{--portrait-scale:830.270%;--portrait-x:82.902%;--portrait-y:32.777%}
+
+.cover-art.sword-portrait{margin:0;width:100%;max-width:400px;aspect-ratio:1;padding:0;border-radius:0;overflow:hidden;border:1px solid #c3c6b5;background:#233433;position:relative}.legendary-sword{width:100%;height:100%;object-fit:cover;display:block}.sword-portrait figcaption{position:absolute;bottom:0;left:0;right:0;padding:27px 10px 12px;background:linear-gradient(transparent,#132021de);color:#f1e8cf;font-size:11px;letter-spacing:.1em;text-align:center}.story-arrival img{object-position:50% 50%}
+
+.dialogue-stack{grid-template-columns:minmax(0,1fr);margin:16px 0}
+.story-portrait{flex-shrink:0}
+.story-portrait--emperor{background-image:url('./assets/story/emperor-portrait.png');background-size:cover;background-position:center}
+.story-speech--emperor{background:#f8f0df;border-color:#d8bd86}
+.dialogue-action{display:block;color:#7c8173;font-size:12px;margin-bottom:4px}
+.kui-notebook{margin:24px 0;padding:22px;border:1px solid #d6d7bc;border-left:4px solid #b99a5e;border-radius:12px;background:#faf7e9}
+.kui-notebook header{display:flex;align-items:center;gap:15px;margin-bottom:12px}
+.kui-notebook header .story-portrait{width:48px;height:48px}
+.kui-notebook h3{margin:3px 0;font-size:19px}.kui-notebook small{color:#927747}
+.kui-notebook ul{padding-left:22px;margin:0;line-height:1.9;color:#3d5b50}.kui-notebook li+li{margin-top:7px}
+.prep-definitions .story-speech{margin:0}.prep-conversation.story-speech{margin:20px 0}
+@media(max-width:600px){.kui-notebook{padding:16px}.dialogue-stack .story-speech{grid-template-columns:48px minmax(0,1fr)}.dialogue-stack .story-portrait{width:48px;height:48px}}
+
